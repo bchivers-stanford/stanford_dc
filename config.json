@@ -1,0 +1,28 @@
+{
+  "inputFiles": {
+    "extreme_days_2014_fips.csv": {
+      "entityType": "County",
+      "provenance": "NOAA"
+    },
+    "extreme_days_2014_zip.csv": {
+      "entityType": "CensusZipCodeTabulationArea",
+      "provenance": "NOAA"
+    }
+  },
+  "variables": {
+    "n_days_extreme_2014": {
+      "name": "Number of Extreme Sea Level Days",
+      "description": "Number of days between 2014 and 2024 when the sea level is recorded as 3 standard deviations from the mean",
+      "searchDescriptions": ["This variable is the count of days between 2014 and 2024 when a certain NOAA tide gauge station recorded an extreme sea level.", "An extreme sea level is defined here as 3 standard deviations from the mean sea level."],
+      "group": "Oceans"
+    }
+  },
+  "sources": {
+    "NOAA": {
+      "url": "https://www.noaa.gov/",
+      "provenances": {
+        "NOAA Tide Gauge Stations": "https://tidesandcurrents.noaa.gov/map/index.html?"
+      }
+    }
+  }
+}
