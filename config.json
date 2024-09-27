@@ -2,11 +2,23 @@
   "inputFiles": {
     "extreme_days_2014_fips.csv": {
       "entityType": "County",
-      "provenance": "NOAA"
+      "provenance": "NOAA Tide Gauge Stations"
     },
     "extreme_days_2014_zip.csv": {
       "entityType": "CensusZipCodeTabulationArea",
-      "provenance": "NOAA"
+      "provenance": "NOAA Tide Gauge Stations"
+    },
+    "underground_lines_fips.csv": {
+      "entityType": "County",
+      "provenance": "Grid Underground Distribution Statistics (GUDS) for the US"
+    },
+    "underground_lines_state.csv": {
+      "entityType": "State",
+      "provenance": "Grid Underground Distribution Statistics (GUDS) for the US"
+    },
+    "underground_lines_zip.csv": {
+      "entityType": "CensusZipCodeTabulationArea",
+      "provenance": "Grid Underground Distribution Statistics (GUDS) for the US"
     }
   },
   "variables": {
@@ -14,7 +26,13 @@
       "name": "Number of Extreme Sea Level Days",
       "description": "Number of days between 2014 and 2024 when the sea level is recorded as 3 standard deviations from the mean",
       "searchDescriptions": ["This variable is the count of days between 2014 and 2024 when a certain NOAA tide gauge station recorded an extreme sea level.", "An extreme sea level is defined here as 3 standard deviations from the mean sea level."],
-      "group": "Oceans"
+      "group": "Stanford Doerr School of Sustainability/Oceans"
+    },
+    "distri_ug_rate": {
+      "name": "Proportion of Underground Distribution Power Lines",
+      "description": "Proportion of distribution power lines that are underground (values range from 0 to 1)",
+      "searchDescriptions": ["Proportion of distribution power lines that are underground (values range from 0 to 1)"],
+      "group": "Stanford Doerr School of Sustainability/Civil and Environmental Engineering"
     }
   },
   "sources": {
@@ -22,6 +40,12 @@
       "url": "https://www.noaa.gov/",
       "provenances": {
         "NOAA Tide Gauge Stations": "https://tidesandcurrents.noaa.gov/map/index.html?"
+      }
+    },
+    "Ram Rajagapol":{
+      "url":"https://cee.stanford.edu/people/ram-rajagopal",
+      "provenances": {
+        "Grid Underground Distribution Statistics (GUDS) for the US": "https://arxiv.org/abs/2402.06668"
       }
     }
   }
