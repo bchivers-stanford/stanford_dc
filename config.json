@@ -19,6 +19,10 @@
     "underground_lines_zip.csv": {
       "entityType": "CensusZipCodeTabulationArea",
       "provenance": "Grid Underground Distribution Statistics (GUDS) for the US"
+    },
+    "no_till_by_fips.csv": {
+      "entityType": "County",
+      "provenance": "Higher levels of no-till agriculture associated with lower PM2.5 in the Corn Belt"
     }
   },
   "variables": {
@@ -33,6 +37,12 @@
       "description": "Proportion of distribution power lines that are underground (values range from 0 to 1)",
       "searchDescriptions": ["Proportion of distribution power lines that are underground (values range from 0 to 1)"],
       "group": "Stanford Doerr School of Sustainability/Civil and Environmental Engineering"
+    },
+    "classification_mean": {
+      "name": "Proportion of No Till Agricultre",
+      "description": "Proportion of No Till Agriculture by county",
+      "searchDescriptions": ["No-till approaches to agricultural soil management have been encouraged as a means of reducing soil erosion, reducing water pollution, and increasing carbon sequestration"],
+      "group": "Stanford Doerr School of Sustainability/Earth System Science"
     }
   },
   "sources": {
@@ -46,6 +56,12 @@
       "url":"https://cee.stanford.edu/people/ram-rajagopal",
       "provenances": {
         "Grid Underground Distribution Statistics (GUDS) for the US": "https://arxiv.org/abs/2402.06668"
+      }
+    },
+    "David Lobell":{
+      "url":"https://sustainability.stanford.edu/people/david-lobell",
+      "provenances": {
+        "Higher levels of no-till agriculture associated with lower PM2.5 in the Corn Belt": "https://doi.org/10.1088/1748-9326/ac816f"
       }
     }
   }
