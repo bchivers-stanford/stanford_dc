@@ -27,6 +27,10 @@
     "deepsolar.csv": {
       "entityType": "County",
       "provenance": "Deep Solar"
+    },
+    "california_distribution_grid.csv": {
+      "entityType": "County",
+      "provenance": "SDSS"
     }
   },
   "variables": {
@@ -101,6 +105,18 @@
       "description": "The Total Number of Solar Installations",
       "searchDescriptions": ["The Total Number of Solar Installations"],
       "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
+    },
+    "total_distribution_power_line_length": {
+      "name": "Total_Distribution_Power_Line_Length",
+      "description": "The total distribution of power line length",
+      "searchDescriptions": ["The total distribution of power line length"],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
+    },
+    "cost_per_household_for_undergrounding_fire_prone_lines": {
+      "name": "Cost_Per_Household_For_undergrounding_Fire_Prone_Lines",
+      "description": "Cost per household for underground fire prone lines",
+      "searchDescriptions": ["Cost per household for underground fire prone lines"],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
     }
   },
   "sources": {
@@ -126,6 +142,12 @@
       "url":"http://web.stanford.edu/group/deepsolar/home",
       "provenances": {
         "Deep Solar": "http://web.stanford.edu/group/deepsolar/home"
+      }
+    },
+    "Stanford":{
+      "url":"https://www.stanford.edu",
+      "provenances": {
+        "SDSS": "https://sustainability.stanford.edu"
       }
     }
   }
