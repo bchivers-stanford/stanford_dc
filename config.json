@@ -39,7 +39,7 @@
       "group": "Stanford Doerr School of Sustainability/Civil and Environmental Engineering"
     },
     "classification_mean": {
-      "name": "Proportion of No Till Agricultre",
+      "name": "Proportion of No Till Agriculture",
       "description": "Proportion of No Till Agriculture by county",
       "searchDescriptions": ["No-till approaches to agricultural soil management have been encouraged as a means of reducing soil erosion, reducing water pollution, and increasing carbon sequestration"],
       "group": "Stanford Doerr School of Sustainability/Earth System Science"
