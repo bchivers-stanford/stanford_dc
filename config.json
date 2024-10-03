@@ -23,6 +23,10 @@
     "no_till_by_fips.csv": {
       "entityType": "County",
       "provenance": "Higher levels of no-till agriculture associated with lower PM2.5 in the Corn Belt"
+    },
+    "deepsolar.csv": {
+      "entityType": "County",
+      "provenance": "Deep Solar"
     }
   },
   "variables": {
@@ -43,6 +47,60 @@
       "description": "Proportion of No Till Agriculture by county",
       "searchDescriptions": ["No-till approaches to agricultural soil management have been encouraged as a means of reducing soil erosion, reducing water pollution, and increasing carbon sequestration"],
       "group": "Stanford Doerr School of Sustainability/Earth System Science"
+    },
+    "num_of_installations_residential": {
+      "name": "Count_SolarInstallation_Residential",
+      "description": "The number of separate residential solar installations counted by DeepSolar model",
+      "searchDescriptions": ["The number of separate residential solar installations counted by DeepSolar model"],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
+    },
+    "num_of_installations_commercial": {
+      "name": "Count_SolarInstallation_Commercial",
+      "description": "The number of separate commercial solar installations counted by DeepSolar model",
+      "searchDescriptions": ["The number of separate commercial solar installations counted by DeepSolar model"],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
+    },
+    "num_of_installations_utility_scale": {
+      "name": "Count_SolarInstallation_UtilityScale",
+      "description": "The number of separate utility scale solar installations counted by DeepSolar model",
+      "searchDescriptions": ["The number of separate utility scale solar installations counted by DeepSolar model"],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
+    },
+    "num_of_installations_solar_heat": {
+      "name": "Count_SolarThermalInstallation_NonUtility",
+      "description": "The number of separate solar thermal installations counted by DeepSolar model. Projects are not connected to the grid and energy is not converted to electricity, but used to heat water.",
+      "searchDescriptions": ["The number of separate solar thermal installations counted by DeepSolar model"," Projects are not connected to the grid and energy is not converted to electricity, but used to heat water"],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
+    },
+    "avg_size_residential": {
+      "name": "Mean_CoverageArea_SolarInstallation_Residential",
+      "description": "The average area covered by an entire residential solar project",
+      "searchDescriptions": ["The average area covered by an entire residential solar project"],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
+    },
+    "avg_size_commercial": {
+      "name": "Mean_CoverageArea_SolarInstallation_Commercial",
+      "description": "The average area covered by commercial solar installations as modeled by DeepSolar. Model may underestimate the size.",
+      "searchDescriptions": ["The average area covered by commercial solar installations as modeled by DeepSolar", "Model may underestimate the size"],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
+    },
+    "avg_size_utility_scale": {
+      "name": "Mean_CoverageArea_SolarInstallation_UtilityScale",
+      "description": "The average area covered by utility solar installations as modeled by DeepSolar. Model may underestimate the size.",
+      "searchDescriptions": ["The average area covered by utility solar installations as modeled by DeepSolar", "Model may underestimate the size."],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
+    },
+    "avg_size_solar_heat": {
+      "name": "Mean_CoverageArea_SolarThermalInstallation_NonUtility",
+      "description": "The average area covered by residential solar thermal installations as modeled by DeepSolar. Projects are not connected to the grid and energy is not converted to electricity, but used to heat water.",
+      "searchDescriptions": ["The average area covered by residential solar thermal installations as modeled by DeepSolar", "Projects are not connected to the grid and energy is not converted to electricity, but used to heat water."],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
+    },
+    "num_of_installations": {
+      "name": "Count_SolarInstallation",
+      "description": "The Total Number of Solar Installations",
+      "searchDescriptions": ["The Total Number of Solar Installations"],
+      "group": "Stanford Doerr School of Sustainability/Energy Science and Engineering"
     }
   },
   "sources": {
@@ -62,6 +120,12 @@
       "url":"https://sustainability.stanford.edu/people/david-lobell",
       "provenances": {
         "Higher levels of no-till agriculture associated with lower PM2.5 in the Corn Belt": "https://doi.org/10.1088/1748-9326/ac816f"
+      }
+    },
+    "Deep Solar":{
+      "url":"http://web.stanford.edu/group/deepsolar/home",
+      "provenances": {
+        "Deep Solar": "http://web.stanford.edu/group/deepsolar/home"
       }
     }
   }
